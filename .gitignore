@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+
+# Virtual environments
+.venv/
+venv/
+env/
+# Environment variables
+.env
+*.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.env/
+
+# Environment files
+.env
+*.env
+
+# PyCharm
+.idea/
+*.iml
+
+# VSCode
+.vscode/
+
+# Byte-compiled / packages
+*.egg-info/
+dist/
+build/
+
+# Docker
+docker-compose.yml
+Dockerfile
+
+# OS files
+.DS_Store
+Thumbs.db
