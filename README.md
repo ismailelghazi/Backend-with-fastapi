@@ -1,6 +1,6 @@
-# TalAIt Translation Backend
+# space translte Translation Backend
 
-A secure, private translation backend for TalAIt using FastAPI, PostgreSQL, and Hugging Face Inference API.
+A secure, private translation backend for space translte using FastAPI, PostgreSQL, and Hugging Face Inference API.
 
 ## Features
 
@@ -38,7 +38,7 @@ Create a `.env` file in the `backend` directory (or set them in `docker-compose.
 ```env
 POSTGRES_USER=postgres
 POSTGRES_PASSWORD=password
-POSTGRES_DB=talait
+POSTGRES_DB=space translte
 HF_TOKEN=your_hf_token_here
 JWT_SECRET=your_jwt_secret
 ```
