@@ -24,8 +24,9 @@ origins = [
     "http://localhost:3000",
     "http://localhost:8080",
     "https://backend-with-fastapi.vercel.app",
-    "https://frontend-translate-klcyd3m7w-ismailelghs-projects.vercel.app",  # <-- add this
-
+    "https://frontend-translate.vercel.app",
+    "https://frontend-translate-git-main-ismailelghs-projects.vercel.app",
+    "https://frontend-translate-klcyd3m7w-ismailelghs-projects.vercel.app",
 ]
 
 app.add_middleware(
