@@ -23,6 +23,7 @@ origins = [
     "http://localhost",
     "http://localhost:3000",
     "http://localhost:8080",
+    "https://backend-with-fastapi.vercel.app",
 ]
 
 app.add_middleware(
