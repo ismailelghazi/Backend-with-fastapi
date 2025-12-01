@@ -14,7 +14,7 @@ async def lifespan(app: FastAPI):
     Base.metadata.create_all(bind=engine)
     yield
 
-app = FastAPI(title="TalAIt Backend", lifespan=lifespan)
+app = FastAPI(title="Backend", lifespan=lifespan)
 
 
 
