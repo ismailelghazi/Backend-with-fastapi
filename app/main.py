@@ -23,8 +23,9 @@ origins = [
     "http://localhost",
     "http://localhost:3000",
     "http://localhost:8080",
-    "https://frontend-translate.vercel.app",
-    ]
+    "https://story-translation-frontend.vercel.app",
+    # Add your actual Vercel frontend URL here
+]
 
 app.add_middleware(
     CORSMiddleware,

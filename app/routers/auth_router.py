@@ -29,12 +29,15 @@ def login(response: Response, user: schemas.UserCreate, db: Session = Depends(da
     access_token = jwt_handler.create_access_token(data={"sub": db_user.username})
     
     # Set HTTP-only cookie
+    # For cross-origin requests (frontend on different domain), we need:
+    # - secure=True (HTTPS only)
+    # - samesite="none" (allow cross-site cookies)
     response.set_cookie(
         key="access_token",
         value=f"Bearer {access_token}",
         httponly=True,
-        secure=False, # Set to False for localhost (HTTP)
-        samesite="lax"
+        secure=True,  # Required for samesite="none"
+        samesite="none"  # Required for cross-origin cookies
     )
     
     return {"message": "logged in"}
